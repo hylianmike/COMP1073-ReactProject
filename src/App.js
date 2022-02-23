@@ -1,71 +1,68 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import { Bar } from "react-chartjs-2";
 import { Chart as Chartjs } from 'chart.js/auto';
 
 function App() {
 return (
 	<div className="App">
-    <h1>GEEKSFORGEEKS BAR CHART REACTJS</h1>
     <div>
       <Bar
         data={{
-          // Name of the variables on x-axies for each bar
-          labels: ["1st bar", "2nd bar", "3rd bar", "4th bar"],
-          datasets: [{
-            // Label for bars
-            label: "total count/value",
-            // Data or value of your each variable
-            data: [1552, 1319, 613, 1400],
-            // Color of each bar
-            backgroundColor: ["aqua", "green", "red", "yellow"],
-            // Border color of each bar
-            borderColor: ["aqua", "green", "red", "yellow"],
-            borderWidth: 0.5,
-          }],
+          // set the labels, indicates the amount of dollars spent per transaction
+          labels:['0 - 10', '11 - 20', '21 - 30', '31 - 40', '41 - 50', '51 - 60', '61 - 70', '71 - 80', '81 - 90', '91 - 100', 'Over 100'],
+          // set the actual data values
+          datasets:[{
+              // set the label, and numerical values
+              label: 'Purchase Value ($)',
+              data: [1569, 9363, 10625, 10244, 8278, 5595, 3312, 1601, 676, 254, 98],
+              // set the different background colours for the columns
+              backgroundColor:['rgba(255, 0, 0, 0.6)', 'rgba(0, 0, 255, 0.6)', 'rgba(0, 255, 0, 0.6)', 'rgba(0, 255, 255, 0.6)', 'rgba(255, 0, 255, 0.6)', 'rgba(255, 255, 0, 0.6)', 
+                              'rgba(249, 138, 217, 0.6)', 'rgba(255, 95, 0, 0.6)', 'rgba(209, 209, 209, 0.6)', 'rgba(141, 119, 11, 0.6)', 'rgba(239, 152, 154, 0.6)'],
+              // set the border information
+              borderWidth: 1,
+              borderColor: 'grey',
+              // set the hover information
+              hoverBorderWidth: 4,
+              hoverBorderColor: 'black'
+          }]
         }}
-        // Height of graph
-        height={400}
+        // set the options for the chart
         options={{
-          maintainAspectRatio: false,
-          scales: {
-            yAxes: [{
-              ticks: {
-                // The y-axis value will start from zero
-                beginAtZero: true,
+          plugins: {
+              // set the title of the chart
+              title:{
+                  display: true,
+                  text: 'Cost of Transactions that were involved in Fraud',
+                  font: {
+                      size: 35,
+                      family: "'Times New Roman', Times, serif",
+                  }
               },
-            }]
+              // remove the legend from appearing
+              legend:{ display: false }
           },
-          legend: {
-            labels: {
-              fontSize: 15,
-            },
-          },
-        }}
+          scales: {
+              // set the x-axis title
+              x: {
+                  title: {
+                      display: true,
+                      text: 'Amount of Dollars Spent On A Transaction',
+                      font: {
+                          size: 20
+                      }
+                  }
+              },
+              // set the y-axis title
+              y: {
+                  title: {
+                      display: true,
+                      text: 'Number of Transactions',
+                      font: {
+                          size: 20
+                      }
+                  }
+              }
+          }
+      }}
       />
     </div>
 	</div>
