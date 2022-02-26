@@ -1,9 +1,13 @@
+// import component and Bar
 import React, { Component } from "react";
 import { Bar } from 'react-chartjs-2';
 
+// create a class that extends to the component class
 class BarChart extends Component{
+    // constructor for the component
     constructor(props){
         super(props);
+        // set the state to the data for the chart
         this.state = {
             chartData: {
                 // set the labels, indicates the amount of dollars spent per transaction
@@ -27,11 +31,14 @@ class BarChart extends Component{
         }
     }
 
+    // render function that returns a div with a Bar chart from Chart.js
     render(){
         return(
             <div className="chart">
-                <Bar 
+                <Bar
+                    // set the data to the state variable
                     data={this.state.chartData}
+                    // set the options
                     options={{
                         plugins: {
                             // set the title of the chart

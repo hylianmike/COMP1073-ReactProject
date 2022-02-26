@@ -1,12 +1,15 @@
+// import component and Pie
 import React, { Component } from "react";
 import { Pie } from 'react-chartjs-2';
 
+// create a class that extends to the component class
 class PieChart extends Component
 {
+    // constructor for the component
     constructor(props)
     {
         super(props);
-
+        // set the state to the data for the chart
         this.state = 
         {
             chartData: 
@@ -38,12 +41,15 @@ class PieChart extends Component
         }
     }
 
+    // render function that returns a div with a Bar chart from Chart.js
     render()
     {
         return(
             <div className="chart">
                 <Pie 
+                    // set the data to the state variable
                     data={this.state.chartData}
+                    // set the options
                     options=
                     {{
                         plugins: 
@@ -59,9 +65,18 @@ class PieChart extends Component
                                     family: "'Times New Roman', Times, serif",
                                 }
                             },
-
-                            // remove legend from appearing
-                            legend:{ display: true }
+                            // configure the text for the legend to be larger
+                            legend:
+                            {
+                                labels:
+                                {
+                                    font:
+                                    {
+                                        size: 15
+                                    }
+                                }
+                                
+                            }
                         }
                     }}
                 />
