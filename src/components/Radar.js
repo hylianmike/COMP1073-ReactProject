@@ -7,7 +7,7 @@ class RadarChart extends Component{
         this.state = {
             chartData: {
                 // set the labels, indicates the amount of dollars spent per transaction
-                labels:['11 - 20', '21 - 30', '31 - 40', '41 - 50', '51 - 60', '61 - 70', '71 - 80'],
+                labels:['< 20', '21 - 30', '31 - 40', '41 - 50', '51 - 60', '61 - 70', '> 70'],
                 // set the actual data values
                 datasets:[{
                     // set the label, and numerical values
@@ -37,6 +37,15 @@ class RadarChart extends Component{
                             },
                             // remove the legend from appearing
                             legend:{ display: false }
+                        },
+                        scales: {
+                            r: {
+                                pointLabels: {
+                                    font:{
+                                        size: 15
+                                    }
+                                }
+                            }
                         }
                     }}
                 />

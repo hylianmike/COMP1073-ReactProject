@@ -61,23 +61,7 @@ class PieChart extends Component
                             },
 
                             // remove legend from appearing
-                            legend:{ display: false }
-                        },
-                        scales: 
-                        {                            
-                            // set the y-axis title
-                            y: 
-                            {
-                                title: 
-                                {
-                                    display: true,
-                                    text: 'Number of Browsers',
-                                    font: 
-                                    {
-                                        size: 25
-                                    }
-                                }
-                            }
+                            legend:{ display: true }
                         }
                     }}
                 />
