@@ -1,4 +1,27 @@
-# Getting Started with Create React App
+# Our Domain/Industry
+We chose fraud in ecommerce as our industry, and we obtained our data from Binh Vu's dataset ["Fraud ecommerce"](https://www.kaggle.com/vbinh002/fraud-ecommerce) on Kaggle.com.
+We chose this domain because the ecommerce industry continues to grow year after year, and as it grows, so does the level of crime associated with it.
+By visualizing this data through various charts, we are able to get a picture of key metrics relating to fraud in ecommerce, shown below.
+
+# Our Dashboard
+![image](https://user-images.githubusercontent.com/82720132/155858836-5eaacf3a-e770-4138-b699-e7714d81e89c.png)
+![image](https://user-images.githubusercontent.com/82720132/155858838-f7fdbdd1-748d-4f33-85dc-5c4003f97d12.png)
+
+
+### Bar Chart - Cost of Transactions that were involved in Fraud
+This data represents the costs of transactions that were deemed fraudulent.
+### Radar Chart - Ages of Fraudsters
+This data represents the ages of people who commited the fraudulent activity.
+### Pie Chart - Browsers that were involved in Fraud
+This chart reflects the amount of times that a certain internet browser was used to commit fraud via e-commerce
+### Line Chart - Amount of Transactions that were involved in Fraud in a Given Month
+This chart displays how the act of fraud is dispersed across the year. Note that it is at its highest during the summer months.
+
+<br /><br /><br />
+
+# React Auto Generated Readme:
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
