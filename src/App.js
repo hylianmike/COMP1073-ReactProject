@@ -14,6 +14,7 @@ return (
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
 		{/* title and header for the site */}
 		<h1 className='text-center'><u>Using Chart.js in React</u></h1>
+		<h2 className='text-center'>E-commerce Transactions that were Involved in Fraud</h2>
 		<p className='text-center'>Project By: Mike Rosanelli, Jack Douma, Chris Veilleux</p>
 		{/* first row that contains two divs, that has the bar chart and line charts */}
 		<div className='row'>

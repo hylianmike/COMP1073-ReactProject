@@ -12,7 +12,7 @@ code {
     monospace;
 }
 /* set text to times new roman to match with the graphs, and set font to 50px */
-.u, u, .p, p{
+.u, u, .p, p, h2{
   font-family: 'Times New Roman', Times, serif;
   font-size: 50px;
 }
@@ -20,9 +20,9 @@ code {
 div div div{
   padding: 10px;
 }
-/* change the font size of the p element to 30px */
+/* change the font size of the p element to 25px */
 .p, p{
-  font-size: 30px;
+  font-size: 25px;
 }
 /* make a border around the charts + extra padding */
 canvas{
