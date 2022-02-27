@@ -15,14 +15,11 @@ class PieChart extends Component
             chartData: 
             {
                 // set the labels
-                labels:['Chrome', 'IE', 'Safari'],
+                labels:['Google Chrome', 'Internet Explorer', 'Safari'],
 
                 // set thedata values
                 datasets:
                 [{
-                    // set the label
-                    label: 'Browser Type',
-
                     // numerical values
                     data: [20986, 12603, 8376],
 

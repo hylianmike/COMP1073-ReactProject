@@ -14,8 +14,7 @@ class BarChart extends Component{
                 labels:['0 - 10', '11 - 20', '21 - 30', '31 - 40', '41 - 50', '51 - 60', '61 - 70', '71 - 80', '81 - 90', '91 - 100', 'Over 100'],
                 // set the actual data values
                 datasets:[{
-                    // set the label, and numerical values
-                    label: 'Purchase Value ($)',
+                    // set numerical values
                     data: [1569, 9363, 10625, 10244, 8278, 5595, 3312, 1601, 676, 254, 98],
                     // set the different background colours for the columns
                     backgroundColor:['rgba(255, 0, 0, 0.6)', 'rgba(0, 0, 255, 0.6)', 'rgba(0, 255, 0, 0.6)', 'rgba(0, 255, 255, 0.6)', 'rgba(255, 0, 255, 0.6)', 'rgba(255, 255, 0, 0.6)', 
@@ -58,7 +57,7 @@ class BarChart extends Component{
                             x: {
                                 title: {
                                     display: true,
-                                    text: 'Amount of Dollars Spent On A Transaction',
+                                    text: 'Purchase Value ($)',
                                     font: {
                                         size: 20
                                     }

@@ -14,8 +14,7 @@ class RadarChart extends Component{
                 labels:['< 20', '21 - 30', '31 - 40', '41 - 50', '51 - 60', '61 - 70', '> 70'],
                 // set the actual data values
                 datasets:[{
-                    // set the label, and numerical values
-                    label: 'Ages of Fraudsters',
+                    // set the numerical values
                     data: [3086, 18209, 20156, 8614, 1447, 101, 2],
                     backgroundColor: 'rgba(255, 165, 0, 0.5)',
                 }]
@@ -36,7 +35,7 @@ class RadarChart extends Component{
                             // set the title of the chart
                             title:{
                                 display: true,
-                                text: 'Ages of Fraudsters',
+                                text: 'Ages of Fraudsters (Years)',
                                 font: {
                                     size: 35,
                                     family: "'Times New Roman', Times, serif",
