@@ -4,9 +4,8 @@ We chose this domain because the ecommerce industry continues to grow year after
 By visualizing this data through various charts, we are able to get a picture of key metrics relating to fraud in ecommerce, shown below.
 
 # Our Dashboard
-![image](https://user-images.githubusercontent.com/82720132/155858836-5eaacf3a-e770-4138-b699-e7714d81e89c.png)
-![image](https://user-images.githubusercontent.com/82720132/155858838-f7fdbdd1-748d-4f33-85dc-5c4003f97d12.png)
-
+![image](https://user-images.githubusercontent.com/83480170/155894445-dae74263-8f89-4055-a51c-72be1da76692.png)
+![image](https://user-images.githubusercontent.com/83480170/155894452-2d46fa14-6d17-4ca5-9166-3c57b82cbd8b.png)
 
 ### Bar Chart - Cost of Transactions that were involved in Fraud
 This data represents the costs of transactions that were deemed fraudulent.
