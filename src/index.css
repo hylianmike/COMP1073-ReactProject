@@ -7,32 +7,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 }
-
-.u, u, .p, p{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 50px;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* set text to times new roman to match with the graphs, and set font to 50px */
+.u, u, .p, p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+/* give the fivs with the charts some extra padding */
 div div div{
   padding: 10px;
 }
-
+/* change the font size of the p element to 30px */
 .p, p{
   font-size: 30px;
 }
-
+/* make a border around the charts + extra padding */
 canvas{
   padding: 5px;
   border: solid 5px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   background-color: white;
 }
-
+/* make the background of the site a super cool gradient */
 .container-fluid{
   background-image: linear-gradient(to top, red , yellow);
 }
